@@ -185,7 +185,7 @@ CUSTOM_CSS = """
 def setup_page_config():
     """Sets up page configurations like title, layout, and tab icons."""
     st.set_page_config(
-        page_title="EMP.support",
+        page_title="EMPSupport",
         page_icon="src/favicon.png",
         layout="centered",
         initial_sidebar_state="expanded"
@@ -198,7 +198,7 @@ def render_sidebar(kb_status: str, rebuild_callback: Callable[[], None]):
     Renders the sidebar components including KB status and control buttons.
     """
     with st.sidebar:
-        st.markdown("<div class='sidebar-title'>EMP.support</div>", unsafe_allow_html=True)
+        st.markdown("<div class='sidebar-title'>EMPSupport</div>", unsafe_allow_html=True)
         st.markdown("---")
         
         # Display Knowledge Base Status
