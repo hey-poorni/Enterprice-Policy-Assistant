@@ -171,13 +171,25 @@ CUSTOM_CSS = """
         box-shadow: 0 0 0 2px rgba(15, 23, 42, 0.1) !important;
     }
 
-    /* Hide Streamlit Header, deploy button, and footer */
-    [data-testid="stHeader"] {
+    /* Hide Streamlit deploy button and main menu, but keep the header container so the expand button stays visible */
+    [data-testid="stDeployButton"] {
+        display: none !important;
+    }
+    #MainMenu, [data-testid="stMainMenu"] {
         display: none !important;
     }
     footer {
         display: none !important;
         visibility: hidden !important;
+    }
+
+    /* Darken sidebar collapse/expand arrows for accessibility */
+    [data-testid="collapsedControl"] svg,
+    [data-testid="baseButton-header"] svg,
+    [data-testid="collapsedControl"] button,
+    [data-testid="baseButton-header"] button {
+        color: #0f172a !important;
+        fill: #0f172a !important;
     }
 </style>
 """
@@ -185,7 +197,7 @@ CUSTOM_CSS = """
 def setup_page_config():
     """Sets up page configurations like title, layout, and tab icons."""
     st.set_page_config(
-        page_title="EMPSupport",
+        page_title="EMPsupport",
         page_icon="src/favicon.png",
         layout="centered",
         initial_sidebar_state="expanded"
@@ -198,7 +210,7 @@ def render_sidebar(kb_status: str, rebuild_callback: Callable[[], None]):
     Renders the sidebar components including KB status and control buttons.
     """
     with st.sidebar:
-        st.markdown("<div class='sidebar-title'>EMPSupport</div>", unsafe_allow_html=True)
+        st.markdown("<div class='sidebar-title'>EMPsupport</div>", unsafe_allow_html=True)
         st.markdown("---")
         
         # Display Knowledge Base Status
