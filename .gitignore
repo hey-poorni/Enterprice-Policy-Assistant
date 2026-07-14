@@ -1,0 +1,25 @@
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Vector Store Index Cache (rebuilt automatically)
+vector_store/index.faiss
+vector_store/chunks.json
+vector_store/metadata.json
+
+# Streamlit config
+.streamlit/
+
+# OS specific files
+.DS_Store
+Thumbs.db
