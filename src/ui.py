@@ -170,13 +170,23 @@ CUSTOM_CSS = """
         color: #0f172a !important;
         box-shadow: 0 0 0 2px rgba(15, 23, 42, 0.1) !important;
     }
+
+    /* Hide Streamlit Header, deploy button, and footer */
+    [data-testid="stHeader"] {
+        display: none !important;
+    }
+    footer {
+        display: none !important;
+        visibility: hidden !important;
+    }
 </style>
 """
 
 def setup_page_config():
     """Sets up page configurations like title, layout, and tab icons."""
     st.set_page_config(
-        page_title="Enterprise Policy Assistant",
+        page_title="EMP.support",
+        page_icon="src/favicon.png",
         layout="centered",
         initial_sidebar_state="expanded"
     )

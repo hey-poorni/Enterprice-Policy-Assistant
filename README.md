@@ -16,6 +16,10 @@ An AI-powered Enterprise Knowledge Retrieval Assistant designed to help employee
 - **Conversational Memory**: Retains session history for natural multi-turn follow-up questions within the current chat, resetting securely when "New Chat" is clicked.
 - **Premium Dribbble Light Theme**: Glassmorphic light styling, smooth lavender-indigo pastel gradients, clean white card chat message blocks, high contrast text, and high-visibility sidebar action controls.
 
+## Demo Video
+
+Watch the application demonstration video on [Google Drive](https://drive.google.com/file/d/1YcnV5Ph1g6qCRG4vpj0rqB7C-Tiw7S1o/view?usp=sharing).
+
 ---
 
 ## Architecture Diagram
