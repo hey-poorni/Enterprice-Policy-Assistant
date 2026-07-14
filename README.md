@@ -20,7 +20,9 @@ An AI-powered Enterprise Knowledge Retrieval Assistant designed to help employee
 
 Click on the thumbnail below to watch the application demonstration and walkthrough video on Google Drive:
 
-[![EMP.support Demo Video](assets/video_thumbnail.png)](https://drive.google.com/file/d/1YcnV5Ph1g6qCRG4vpj0rqB7C-Tiw7S1o/view?usp=sharing)
+<a href="https://drive.google.com/file/d/1YcnV5Ph1g6qCRG4vpj0rqB7C-Tiw7S1o/view?usp=sharing">
+  <img src="assets/video_thumbnail.png" width="480" alt="EMP.support Demo Video" />
+</a>
 
 ---
 
